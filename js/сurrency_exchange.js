@@ -1,7 +1,6 @@
 //Обмен валют на сомы
 //
 //
-//
 // USD: доллар
 // EUR: евро
 // RUB: рубль
@@ -20,7 +19,12 @@ let chosenCurrency = Currency.USD;
 
 function showUserChoosingMsg() {
     let userChoice = prompt(
-        `Выберите валюту которую хотите обменять на сомы.\n1 - доллар\n2 - евро\n3 - рубль\n4 - тенге\n5 - сум`,
+        `Выберите валюту которую хотите обменять на сомы.
+        \n1 - доллар
+        \n2 - евро
+        \n3 - рубль
+        \n4 - тенге
+        \n5 - сум`,
         "1"
     );
     if (userChoice === "1") {
@@ -42,7 +46,7 @@ function showUserChoosingMsg() {
         alert("Неверные данные");
         showUserChoosingMsg();
     }
-}
+};
 
 function showSumEnterMessage() {
     sum = prompt(

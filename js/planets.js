@@ -48,4 +48,4 @@ function showUserChoosingMsg() {
 
 showUserChoosingMsg();
 
-alert(message);
+alert(`Вы выбрали ${message}`);
