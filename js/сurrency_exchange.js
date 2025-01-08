@@ -15,7 +15,7 @@ const Currency = {
     UZS: { name: "UZS", ruName: "сум", code: "5", exchange_rate: 0.0067 },
 };
 let sum = 0;
-let chosenCurrency = Currency.USD;
+let chosenCurrency = {};
 
 function showUserChoosingMsg() {
     let userChoice = prompt(
@@ -54,7 +54,7 @@ function showSumEnterMessage() {
         "500"
     );
 
-    if (isNaN(sum) === true) {
+    if (isNaN(sum)) {
         alert("Неверные данные, введите число")
         showSumEnterMessage();
     }
